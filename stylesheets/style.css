@@ -1,31 +1,48 @@
 
 html, body{
     width: 100%;
-}
-
-.container {
-    margin: 10px 10px;
-}
-
-.container table{
-    margin: 0 auto;
+    height: 100%;
 }
 
 .nav-bar{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 10% 0 0;
+    overflow: hidden;
     text-align: center;
+    background-color: black;
 }
 
 .nav-bar li{
-    display: inline;
+    float: right;
+    padding-right: 2%;
 }
 
 .nav-bar li a{
-    color: black;
+    display: block;
+    color: white;
     text-align: center;
     text-decoration: none;
     padding: 15px 15px;
 }
+
+.hero-image{
+    background-image: url("/ecommerce-site/images/sabri-tuzcu-197978.jpg");
+    height: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 300%;
+}
+
 
