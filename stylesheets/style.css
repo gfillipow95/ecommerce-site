@@ -10,12 +10,13 @@ html, body{
     padding: 0 10% 0 0;
     overflow: hidden;
     text-align: center;
-    background-color: black;
+    background-color: #262626;
 }
 
 .nav-bar li{
     float: right;
     padding-right: 2%;
+    font-family: 'Lusitana', sans-serif;
 }
 
 .nav-bar li a{
@@ -43,6 +44,27 @@ html, body{
     transform: translate(-50%, -50%);
     color: white;
     font-size: 300%;
+    font-family: 'Lusitana', sans-serif;
+}
+
+.product-sections{
+    font-family: 'Lusitana', sans-serif;
+    font-size: 200%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.product-table{
+    margin: auto;
+}
+
+.product-description{
+    text-align: center;
+}
+
+.product-image{
+    max-width: 300px;
+    height: auto;
 }
 
 
