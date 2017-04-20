@@ -42,6 +42,13 @@ html, body{
 
 }
 
+.section-title {
+    margin: auto;
+    width: 50%;
+    padding-top: 50px;
+    text-align: center;
+}
+
 .home{
     background-image: url("/ecommerce-site/images/sabri-tuzcu-197978.jpg");
     background-position: center;
