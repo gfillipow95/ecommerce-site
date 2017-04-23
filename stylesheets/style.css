@@ -54,6 +54,7 @@ html, body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -81,9 +82,24 @@ html, body{
 
 .product-description{
     text-align: center;
+    cursor: pointer;
 }
 
 .product-image{
     max-width: 300px;
     height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-image:hover{
+    position: relative;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1000;
 }
