@@ -42,7 +42,7 @@ html, body{
 
 .product-image-container{
     width: 50%;
-    height: 300px;
+    height: auto;
     float: left;
 }
 
@@ -52,5 +52,5 @@ html, body{
 }
 .product-page-image{
     max-width: 350px;
-    height: auto
+    height: auto;
 }

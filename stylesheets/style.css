@@ -49,7 +49,7 @@ html, body{
 }
 
 .home{
-    background-image: url("/ecommerce-site/images/sabri-tuzcu-197978.jpg");
+    background-image: url("../images/sabri-tuzcu-197978.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,9 +96,5 @@ html, body{
 
 .product-image:hover{
     position: relative;
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    -o-transform: scale(1.3);
-    transform: scale(1.3);
-    z-index: 1000;
+    opacity: .6;
 }
