@@ -22,7 +22,7 @@
             <h3>The Bean Coffee Company</h3>
             <h3>Le Bean (Dark French Roast) Organic Whole Bean Coffee</h3>
             <h3>$50</h3>
-            <form novalidate>
+            <form action="mailto:gfillipo@uci.edu" method="post" enctype="text/plain" novalidate>
                 <h2 style="text-align: center">Order Form</h2>
                 <p style="text-align: center">Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
                 <section>
@@ -86,6 +86,15 @@
                         </label>
                     </p>
                     <p>
+                        <span>Shipping Method: </span>
+                        <select name="product">
+                            <option value="shipping-standard" selected>Standard Shipping</option>
+                            <option value="shipping-express">Express Shipping</option>
+                            <option value="shipping-2day">2-Day Shipping</option>
+                            <option value="shipping-overnight">Overnight Shipping</option>
+                        </select>
+                    </p>
+                    <p>
                         <label for="Address">
                             <span>Address: </span>
                             <input type="text" id="address" name="address">
@@ -139,7 +148,7 @@
                         </label>
                     </p>
                 </section>
-                <button>Submit</button>
+                <input name="Submit" id="submit" type="submit" value="Submit" /><br/>
             </form>
         </div>
     </div>
