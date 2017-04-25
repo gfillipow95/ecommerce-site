@@ -3,6 +3,8 @@ html, body{
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: #cdb79e;
+
 }
 
 .nav-bar-container{
@@ -34,32 +36,77 @@ html, body{
 }
 
 .product-page-container{
-    width: 70%;
+    width: 75%;
     height: 100%;
-    margin: 8% auto;
+    margin: 3% auto;
     padding: 10px;
 }
 
+.product-info-container{
+    display: inline-block;
+    height: 75%;
+    float:left;
+    width:40%;
+    background-color: #FFF;
+
+}
+
 .product-image-container{
-    width: 40%;
-    height: auto;
-    float: left;
+    height:70%;
 }
 
 .product-description-container{
-    width:50%;
-    height: 50%;
-    float: right;
-}
-.product-page-image{
-    max-width: 350px;
-    height: auto;
+    text-align: center;
+    padding-top: 40px;
 }
 
+.product-page-image{
+    margin: 20px auto auto auto;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.form-container {
+    display: inline-block;
+    float:right;
+    height: 80%;
+    width: 57%;
+
+}
+
+
 form{
-    margin-top: 15%;
-    border: 1px solid #CCC;
-    border-radius: 1em;
+    padding: 20px 30px 40px 30px;
+    height: 95%;
+    background-color: #FFF;
+    margin: 0;
+}
+
+form > h2 {
+    font-size: 40px;
+    margin: 15px 10px 10px 10px;
+}
+
+form p {
+    margin-bottom: 30px;
+}
+
+section{
+    display: inline-block;
+    padding: 5px;
+}
+
+section.contact {
+    float: left;
+
+}
+
+section.shipping {
+    float:right;
+}
+
+section.payment {
+    clear:both;
 }
 
 input:invalid{
@@ -73,4 +120,26 @@ input:focus:invalid {
 
 .error{
     color: #ea2727;
+}
+
+#submit {
+    background-color: #5299D3; 
+    color: white; 
+    border: none;
+    border-radius: .5em;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    margin: 10px auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: .75;
 }

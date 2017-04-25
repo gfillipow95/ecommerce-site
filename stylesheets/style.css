@@ -100,7 +100,10 @@ a:hover {
 .product-description, .staff-description{
     text-align: center;
     cursor: pointer;
-    width: 25%;
+    width: 20%;
+    padding: 20px;
+    margin: 0px 40px;
+
     /*border: black solid 1px;*/
 }
 
@@ -123,7 +126,7 @@ a:hover {
 .image-container {
   /*border: blue solid 1px;*/
   max-width: 100%;
-  height: 200px;
+  height: 40%;
 }
 
 .desc-container{
@@ -156,7 +159,7 @@ a:hover {
 
 
 #coffee, #makers {
-  background-color: #EADEDA;
+  background-color: #cdb79e;
 }
 
 #mugs {
