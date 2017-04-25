@@ -55,7 +55,7 @@ a:hover {
 .section-title {
     margin: auto;
     width: 50%;
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
 }
 
@@ -92,7 +92,7 @@ a:hover {
 }
 
 .product-table, .staff-table{
-  margin: 70px auto 0px auto;
+  margin: 50px auto 0px auto;
   width: 90%;
   /*border: red solid 1px;*/
 }
