@@ -61,3 +61,16 @@ form{
     border: 1px solid #CCC;
     border-radius: 1em;
 }
+
+input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.error{
+    color: #ea2727;
+}
