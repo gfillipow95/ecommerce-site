@@ -61,7 +61,7 @@ function validCountry(countryName){
 
 function validCreditCard(cardNum){
     //regex patterns for mastercard, visa, and amex
-    return cardNum.match(/(5[1-5]\d{14})|(4\d{12}(\d{3})?)|(3[47]\d{13})/);
+    return cardNum.match(/(5[1-5]\d{14})$|(4\d{12}(\d{3})?)$|(3[47]\d{13})$/);
 }
 
 function validCVC(cvcNum){
@@ -121,12 +121,6 @@ email.addEventListener("keyup", function(event){
 phone.addEventListener("keyup", function(event){
     if(phone.validity.valid && validPhoneNumber(phone.value)){
         phoneError.innerHTML="";
-    }
-});
-
-quantity.addEventListener("keyup", function(event){
-    if(quantity.validity.valid){
-        quantityError.innerHTML="";
     }
 });
 
@@ -193,10 +187,6 @@ form.addEventListener("submit", function(event){
     }
     if(!phone.validity.valid || phone.value === "" || !validPhoneNumber(phone.value)){
         phoneError.innerHTML = "Please enter a valid phone number";
-        event.preventDefault();
-    }
-    if(!quantity.validity.valid || quantity.value === ""){
-        quantityError.innerHTML = "Please enter a quantity";
         event.preventDefault();
     }
     if(!address.validity.valid || address.value === "" || !validStreetAddress(address.value)){

@@ -26,7 +26,7 @@
     <?php require_once 'pdo.php';
 
     //THIS SECTION IS FOR DISPLAYING OUR COFFEE PRODUCTS
-    $coffeeQuery = 'SELECT * FROM coffee';
+    $coffeeQuery = 'SELECT * FROM products WHERE product_id = 1';
     $stmt = $conn->prepare($coffeeQuery);
     $stmt->execute();
     $coffeeInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -44,7 +44,7 @@
                 echo "</tr>";
             }
             echo "<td class='product-description'>";
-            echo "<a href='coffeePage.php?id=$row[product_id]'>";
+            echo "<a href='productPage.php?id=$row[id]&type=$row[product_id]'>";
             echo "<div class='image-container'>";
             echo "<img class='product-image' src='$row[pic]'/>";
             echo "</div>";
@@ -62,7 +62,7 @@
     echo "</div>";
 
     //THIS SECTION IS FOR DISPLAYING OUR MUGS
-    $mugQuery = 'SELECT * FROM mug';
+    $mugQuery = 'SELECT * FROM products WHERE product_id = 2';
     $stmt = $conn->prepare($mugQuery);
     $stmt->execute();
     $mugInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -81,7 +81,7 @@
                 echo "</tr>";
             }
             echo "<td class='product-description'>";
-            echo "<a href='mugPage.php?id=$row[product_id]'>";
+            echo "<a href='productPage.php?id=$row[id]&type=$row[product_id]'>";
             echo "<div class='image-container'>";
             echo "<img class='product-image' src='$row[pic]'/>";
             echo "</div>";
@@ -99,7 +99,7 @@
     echo "</div>";
 
     //THIS SECTION IS FOR DISPLAYING OUR COFFEE MAKERS
-    $makerQuery = 'SELECT * FROM coffeemaker';
+    $makerQuery = 'SELECT * FROM products WHERE product_id = 3';
     $stmt = $conn->prepare($makerQuery);
     $stmt->execute();
     $makerInfo = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -118,7 +118,7 @@
                 echo "</tr>";
             }
             echo "<td class='product-description'>";
-            echo "<a href='makerPage.php?id=$row[product_id]'>";
+            echo "<a href='productPage.php?id=$row[id]&type=$row[product_id]'>";
             echo "<div class='image-container'>";
             echo "<img class='product-image' src='$row[pic]'/>";
             echo "</div>";

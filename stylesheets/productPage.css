@@ -124,8 +124,8 @@ input:focus:invalid {
 }
 
 #submit {
-    background-color: #5299D3; 
-    color: white; 
+    background-color: #5299D3;
+    color: white;
     border: none;
     border-radius: .5em;
     color: white;
@@ -143,4 +143,18 @@ input:focus:invalid {
 
 #submit:hover {
     opacity: .75;
+}
+
+#order-confirmation ul{
+  list-style: none;
+  background-color: white;
+  padding: 2em 2em;
+  margin: auto;
+  width: 60%;
+
+
+}
+
+#order-confirmation li h3 {
+  font-weight: normal;
 }
